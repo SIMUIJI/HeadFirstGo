@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"work_go/src/github.com/headfirstgo/magazine"
+)
 
 func main() {
-	fmt.Println("hello world")
+	var s magazine.Subscriber
+	s.Rate = 4.99
+
+	fmt.Println(s.Rate)
 }
