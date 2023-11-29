@@ -1,13 +1,12 @@
 package main
 
-import (
-	"fmt"
-	"work_go/src/github.com/headfirstgo/magazine"
-)
+type MyType string
+
+func (m MyType) sayHi() {
+	fmt.println("HI")
+}
 
 func main() {
-	var s magazine.Subscriber
-	s.Rate = 4.99
-
-	fmt.Println(s.Rate)
+	value := MyType("test")
+	value.sayHi()
 }
